@@ -1,0 +1,82 @@
+{
+  "name": "vueproj",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@sentry/tracing": "^6.7.2",
+    "@sentry/vue": "^6.7.2",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.4",
+    "decimal.js": "^10.2.1",
+    "element-ui": "^2.13.2",
+    "highcharts": "^9.1.2",
+    "highcharts-vue": "^1.4.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.26.0",
+    "normalize.css": "^8.0.1",
+    "sockjs-client": "^1.5.0",
+    "stompjs": "^2.3.3",
+    "v-calendar": "^2.3.0",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.17.7",
+    "vue-masonry-css": "^1.0.3",
+    "vue-router": "^3.2.0",
+    "vue-the-mask": "^0.11.1",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.1.3",
+    "vuex-persistedstate": "^4.0.0-beta.3",
+    "vuex-shared-mutations": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-eslint": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "globals": {
+      "axios": true,
+      "$t": true,
+      "document": true,
+      "window": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      "> 0.1%",
+      "last 10 versions",
+      "not dead",
+      "ie 10-11"
+    ],
+    "development": [
+      "> 0.1%",
+      "last 10 versions",
+      "not dead",
+      "ie 10-11"
+    ]
+  }
+}

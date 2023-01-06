@@ -1,5 +1,5 @@
 # vue.js
-Part of a [vue 2] (https://v2.vuejs.org/) project<br>
+Part of a [vue 2](https://v2.vuejs.org/) project<br>
 The code shows an example of authorization using the Berear token<br>
 Routing is described. Routing takes into account, in addition to authorization, user roles<br>
 [Vuex](http://vuex.vuejs.org/) is used as storage<br>

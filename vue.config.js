@@ -6,13 +6,6 @@ module.exports = {
       .rule('images')
       .use('url-loader')
       .tap((options) => ({ ...options, name: 'img/[name].[ext]' }));
-    // config.module
-    //   .rule("i18n")
-    //   .resourceQuery(/blockType=i18n/)
-    //   .type('javascript/auto')
-    //   .use("i18n")
-    //   .loader("@kazupon/vue-i18n-loader")
-    //   .end();
   },
   
   transpileDependencies: ['v-calendar'],
@@ -67,28 +60,10 @@ module.exports = {
     sourceMap: true,
   },
   lintOnSave: true,
-  // devServer: {
-  //   proxy: {
-  //     '/*': {
-  //       //target: 'https://pas-test.iwis.io',
-  //      target: 'http://pas-dev.a.iwis.io',
-  //     },
-  //   },
-  // },
-
   devServer: {
     proxy: {
       '^/api': {
-        //target: 'https://pas-test.iwis.io',
         target: process.env.BASE_URL,
-      },
-      '^/ws': {
-        target: process.env.BASE_URL,
-        ws: true,
-        changeOrigin: true,
-        onProxyReq: function (request) {
-          request.setHeader("origin", "http://192.168.1.6:8080");
-        }
       },
     },
   },

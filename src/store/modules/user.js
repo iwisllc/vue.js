@@ -35,7 +35,6 @@ export default {
       state.profile.email = payload;
     },
     [UPDATE_PROFILE](state, payload) {
-      // const oldState = {...state.profile}
       state.profile = {
         ...state.profile,
         ...payload,
@@ -230,7 +229,6 @@ export default {
       vm.$appHttp.post(appConf.url.logout);
       commit(CLEAR_ALL);
       axios.defaults.headers.common.Authorization = '';
-      // router.push({name: 'LoginPage'});
       appHelper.deleteCookie('active');
       commit(SET_STATE, { module: 'user', state: 'token', data: '' });
       localStorage.removeItem('token');
@@ -250,9 +248,6 @@ export default {
       appHelper.deleteCookie('active');
       commit(SET_STATE, { module: 'user', state: 'token', data: '' });
       localStorage.removeItem('token');
-      // if(!location.hash.includes('login')){
-      //   router.push({name: 'LoginPage'});
-      // }
     },
   },
   getters: {
@@ -291,14 +286,6 @@ export default {
       }
 
       return result;
-    },
-    getUserRoles: (state) => {
-      let token = state.token || localStorage.getItem('token');
-      if (token) {
-        const tokenInfo = jwt_decode(token);
-        return tokenInfo.authorities;
-      }
-      return [];
     },
     getUserRole: (state) => {
       let token = state.token || localStorage.getItem('token');

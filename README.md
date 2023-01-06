@@ -10,37 +10,37 @@ src/helpers/AppHttp.js<br>
 Wrap over [Axios](https://axios-http.com/)
 
 ### `appHttp.get(url)`
-Send a GET request
+Send a GET request<br>
 Method returns a Promise
 #### Params
 - url {string} - requred
 ### `appHttp.post(url[, payload[, headers]])`
-Send a POST request
+Send a POST request<br>
 Method returns a Promise
 #### Params
 - url {string} - requred
 - payload {object} - optional, request body
 - headers {object} - optional, headers config
 ### `appHttp.put(url[, payload])`
-Send a PUT request
+Send a PUT request<br>
 Method returns a Promise
 #### Params
 - url {string} - requred
 - payload {object} - optional, request body
 ### `appHttp.delete(url[, payload])`
-Send a DELETE request
+Send a DELETE request<br>
 Method returns a Promise
 #### Params
 - url {string} - requred
 - payload {object} - optional, request body
 ### `appHttp.request(options)`
-Send a request
-It's like axios(config)
+Send a request<br>
+It's like axios(config)<br>
 Method returns a Promise
 #### Params
 - options {object} - requred, axios config
 ### `appHttp.patch(url[, payload])`
-Send a PATCH request
+Send a PATCH request<br>
 Method returns a Promise
 #### Params
 - url {string} - requred
